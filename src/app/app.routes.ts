@@ -1,3 +1,20 @@
+import { Component } from '@angular/core';
 import { Routes } from '@angular/router';
+import { Home } from './features/dashboard/pages/home/home';
+import { Login } from './features/auth/pages/login/login';
+import { Register } from './features/auth/pages/register/register';
 
-export const routes: Routes = [];
+export const routes: Routes = [
+  {
+    'path': '',
+    'component': Home
+  },
+  {
+    'path': 'login',
+    'component': Login
+  },
+  {
+    'path': 'register',
+    'component':Register
+  }
+];
